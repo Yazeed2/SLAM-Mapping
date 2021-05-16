@@ -7,6 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/yazeed/Documents/workspace/rosProject/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/yazeed/Documents/workspace/rosProject/build'
-export ROS_PACKAGE_PATH="/home/yazeed/Documents/workspace/rosProject/src:$ROS_PACKAGE_PATH"
