@@ -2,8 +2,9 @@ cmake_minimum_required(VERSION 3.0.2)
 project(ball_chaser)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
-
+add_compile_options(-std=c++11)
+find_package(catkin REQUIRED)
+find_package(nodelet REQUIRED)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -68,10 +69,7 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -92,7 +90,19 @@ find_package(catkin REQUIRED COMPONENTS
 #   cfg/DynReconf1.cfg
 #   cfg/DynReconf2.cfg
 # )
+include_directories(include ${catkin_INCLUDE_DIRS})
 
+target_link_libraries(ball_chaser ${catkin_LIBRARIES})
+add_executable(ball_chaser src/drive_bot.cpp)
+add_dependencies(ball_chaser drive_bot_generate_messages_.cpp )
+add_service_files(
+  FILES
+  DriveToTarget.srv
+)
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 ###################################
 ## catkin specific configuration ##
 ###################################
