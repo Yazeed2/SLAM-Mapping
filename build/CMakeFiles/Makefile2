@@ -1190,7 +1190,7 @@ ball_chaser/CMakeFiles/ball_chaser_geneus.dir/clean:
 # Target rules for target ball_chaser/CMakeFiles/ball_chaser.dir
 
 # All Build rule for target.
-ball_chaser/CMakeFiles/ball_chaser.dir/all:
+ball_chaser/CMakeFiles/ball_chaser.dir/all: ball_chaser/CMakeFiles/ball_chaser_generate_messages_cpp.dir/all
 	$(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/depend
 	$(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yazeed/Documents/workspace/rosProject/build/CMakeFiles --progress-num=1,2 "Built target ball_chaser"
@@ -1198,7 +1198,7 @@ ball_chaser/CMakeFiles/ball_chaser.dir/all:
 
 # Build rule for subdir invocation for target.
 ball_chaser/CMakeFiles/ball_chaser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yazeed/Documents/workspace/rosProject/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yazeed/Documents/workspace/rosProject/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/ball_chaser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yazeed/Documents/workspace/rosProject/build/CMakeFiles 0
 .PHONY : ball_chaser/CMakeFiles/ball_chaser.dir/rule

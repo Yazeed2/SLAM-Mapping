@@ -92,9 +92,9 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-target_link_libraries(ball_chaser ${catkin_LIBRARIES})
 add_executable(ball_chaser src/drive_bot.cpp)
-add_dependencies(ball_chaser drive_bot_generate_messages_.cpp )
+add_dependencies(ball_chaser ball_chaser_generate_messages_cpp)
+target_link_libraries(ball_chaser ${catkin_LIBRARIES})
 add_service_files(
   FILES
   DriveToTarget.srv
