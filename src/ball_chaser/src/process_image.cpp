@@ -39,14 +39,14 @@ ROS_DEBUG("Hello %s", "World");
         }
     }
     if(found_white){
-        float angular = (white_pos_x / img.width) ;
+        float angular = (white_pos_x / img.width);
         if(angular < 0.333){ 
 
-        drive_robot(0.5, 0.2); 
+        drive_robot(0.5, 1); 
         }else if (angular < 0.666){ 
             drive_robot(0.5, 0); 
         }else{ 
-            drive_robot(0.5, -0.2); 
+            drive_robot(0.5, -1); 
 
         }
         ROS_INFO("moving robot - z:%1.2f, found in:%1.2f", (float)angular, (float)white_pos_x / img.width);
