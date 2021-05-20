@@ -92,9 +92,7 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(ball_chaser src/drive_bot.cpp)
-add_dependencies(ball_chaser ball_chaser_generate_messages_cpp)
-target_link_libraries(ball_chaser ${catkin_LIBRARIES})
+
 add_service_files(
   FILES
   DriveToTarget.srv
@@ -125,10 +123,10 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-include_directories(
-# include
-  ${catkin_INCLUDE_DIRS}
-)
+# include_directories(
+#  include
+#   ${catkin_INCLUDE_DIRS}
+# )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
@@ -214,3 +212,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+add_executable(drive_bot src/drive_bot.cpp)
+add_dependencies(drive_bot ball_chaser_generate_messages_cpp)
+target_link_libraries(drive_bot ${catkin_LIBRARIES})

@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/yazeed/Documents/workspace/rosProject/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/yazeed/Documents/workspace/rosProject/src/ball_chaser/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

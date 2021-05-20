@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD='/home/yazeed/Documents/workspace/rosProject/build'
-export PYTHONPATH="/home/yazeed/Documents/workspace/rosProject/devel/lib/python3/dist-packages:$PYTHONPATH"

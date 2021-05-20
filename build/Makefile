@@ -298,6 +298,19 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named drive_bot
+
+# Build rule for target.
+drive_bot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 drive_bot
+.PHONY : drive_bot
+
+# fast build rule for target.
+drive_bot/fast:
+	$(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/build
+.PHONY : drive_bot/fast
+
+#=============================================================================
 # Target rules for targets named ball_chaser_genpy
 
 # Build rule for target.
@@ -636,19 +649,6 @@ ball_chaser_geneus/fast:
 .PHONY : ball_chaser_geneus/fast
 
 #=============================================================================
-# Target rules for targets named ball_chaser
-
-# Build rule for target.
-ball_chaser: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ball_chaser
-.PHONY : ball_chaser
-
-# fast build rule for target.
-ball_chaser/fast:
-	$(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/build
-.PHONY : ball_chaser/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -814,6 +814,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... drive_bot"
 	@echo "... ball_chaser_genpy"
 	@echo "... ball_chaser_generate_messages_py"
 	@echo "... ball_chaser_gennodejs"
@@ -840,7 +841,6 @@ help:
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... ball_chaser_geneus"
-	@echo "... ball_chaser"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... ball_chaser_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_py"

@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/yazeed/Documents/workspace/rosProject/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -100,6 +88,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target test
 test:
@@ -166,6 +166,21 @@ preinstall/fast:
 depend:
 	cd /home/yazeed/Documents/workspace/rosProject/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+ball_chaser/CMakeFiles/drive_bot.dir/rule:
+	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/drive_bot.dir/rule
+.PHONY : ball_chaser/CMakeFiles/drive_bot.dir/rule
+
+# Convenience name for target.
+drive_bot: ball_chaser/CMakeFiles/drive_bot.dir/rule
+
+.PHONY : drive_bot
+
+# fast build rule for target.
+drive_bot/fast:
+	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/build
+.PHONY : drive_bot/fast
 
 # Convenience name for target.
 ball_chaser/CMakeFiles/ball_chaser_genpy.dir/rule:
@@ -558,21 +573,6 @@ ball_chaser_geneus/fast:
 .PHONY : ball_chaser_geneus/fast
 
 # Convenience name for target.
-ball_chaser/CMakeFiles/ball_chaser.dir/rule:
-	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/ball_chaser.dir/rule
-.PHONY : ball_chaser/CMakeFiles/ball_chaser.dir/rule
-
-# Convenience name for target.
-ball_chaser: ball_chaser/CMakeFiles/ball_chaser.dir/rule
-
-.PHONY : ball_chaser
-
-# fast build rule for target.
-ball_chaser/fast:
-	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/build
-.PHONY : ball_chaser/fast
-
-# Convenience name for target.
 ball_chaser/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : ball_chaser/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
@@ -743,7 +743,7 @@ src/drive_bot.o: src/drive_bot.cpp.o
 
 # target to build an object file
 src/drive_bot.cpp.o:
-	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/src/drive_bot.cpp.o
+	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.o
 .PHONY : src/drive_bot.cpp.o
 
 src/drive_bot.i: src/drive_bot.cpp.i
@@ -752,7 +752,7 @@ src/drive_bot.i: src/drive_bot.cpp.i
 
 # target to preprocess a source file
 src/drive_bot.cpp.i:
-	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/src/drive_bot.cpp.i
+	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.i
 .PHONY : src/drive_bot.cpp.i
 
 src/drive_bot.s: src/drive_bot.cpp.s
@@ -761,7 +761,7 @@ src/drive_bot.s: src/drive_bot.cpp.s
 
 # target to generate assembly for a file
 src/drive_bot.cpp.s:
-	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/src/drive_bot.cpp.s
+	cd /home/yazeed/Documents/workspace/rosProject/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.s
 .PHONY : src/drive_bot.cpp.s
 
 # Help Target
@@ -770,10 +770,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... install/strip"
+	@echo "... drive_bot"
 	@echo "... ball_chaser_genpy"
 	@echo "... ball_chaser_generate_messages_py"
 	@echo "... ball_chaser_gennodejs"
@@ -801,7 +802,6 @@ help:
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... ball_chaser_geneus"
-	@echo "... ball_chaser"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... ball_chaser_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_py"
