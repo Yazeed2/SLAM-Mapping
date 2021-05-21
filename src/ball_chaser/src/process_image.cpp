@@ -30,28 +30,31 @@ ROS_DEBUG("Hello %s", "World");
     // std::cout << img.data <<  std::endl;
     int white_pos_x;
     bool found_white = false; 
-     for (int i = 0; i < img.height * img.step ; i++) {
+     for (int i = 0; i < img.height * img.step ; i += 3) {
 
-            if(img.data[i] == white_pixel){
+            if(img.data[i] == white_pixel && img.data[i+1] == white_pixel && img.data[i+2] == white_pixel){
                 white_pos_x = i% img.step;     
                 found_white = true;    
                 break;
         }
     }
     if(found_white){
-        float angular = (white_pos_x / img.width);
-        if(angular < 0.333){ 
+        float angular = white_pos_x / img.width;
+        if(angular < 1){ 
 
-        drive_robot(0.5, 1); 
-        }else if (angular < 0.666){ 
+        drive_robot(0.5, 0.5); 
+        }else if (angular <2){ 
             drive_robot(0.5, 0); 
         }else{ 
-            drive_robot(0.5, -1); 
+            drive_robot(0.5, -0.5); 
 
         }
-        ROS_INFO("moving robot - z:%1.2f, found in:%1.2f", (float)angular, (float)white_pos_x / img.width);
+        ROS_INFO("moving robot - z:%1.2f, found inn:%1.2f", (float)angular, (float) white_pos_x);
 
-    }
+    }else{ 
+        drive_robot(0, 0); 
+        ros::Duration(0.5).sleep();
+  }
     }
 
 int main(int argc, char** argv)

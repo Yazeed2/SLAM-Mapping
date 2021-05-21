@@ -10,7 +10,6 @@ ros::Publisher motor_command_publisher;
 // This function should publish the requested linear x and angular velocities to the robot wheel joints
 // After publishing the requested velocities, a message feedback should be returned with the requested wheel velocitiesb
 bool handle_drive_request(ball_chaser::DriveToTarget::Request& req, ball_chaser::DriveToTarget::Response& res) {
-        while (ros::ok()) {
         // Create a motor_command object of type geometry_msgs::Twist
         geometry_msgs::Twist motor_command;
         // Set wheel velocities, forward [0.5, 0.0]
@@ -18,7 +17,7 @@ bool handle_drive_request(ball_chaser::DriveToTarget::Request& req, ball_chaser:
         motor_command.angular.z = req.angular_z;
         // Publish angles to drive the robot
         motor_command_publisher.publish(motor_command);
-    }
+  
 
     res.msg_feedback = "linear_x" + std::to_string(  req.linear_x) + " , and angular_z" + std::to_string(req.angular_z);
     ROS_INFO_STREAM(res.msg_feedback);
