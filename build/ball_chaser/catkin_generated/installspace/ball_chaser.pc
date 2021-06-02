@@ -1,4 +1,4 @@
-prefix=/home/yazeed/Documents/workspace/rosProject/install
+prefix=/home/yazeed/Documents/workspace/Localization/install
 
 Name: ball_chaser
 Description: Description of ball_chaser

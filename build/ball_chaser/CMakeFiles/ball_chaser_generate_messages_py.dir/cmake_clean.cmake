@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yazeed/Documents/workspace/rosProject/devel/lib/python3/dist-packages/ball_chaser/srv/_DriveToTarget.py"
-  "/home/yazeed/Documents/workspace/rosProject/devel/lib/python3/dist-packages/ball_chaser/srv/__init__.py"
+  "/home/yazeed/Documents/workspace/Localization/devel/lib/python3/dist-packages/ball_chaser/srv/_DriveToTarget.py"
+  "/home/yazeed/Documents/workspace/Localization/devel/lib/python3/dist-packages/ball_chaser/srv/__init__.py"
   "CMakeFiles/ball_chaser_generate_messages_py"
 )
 

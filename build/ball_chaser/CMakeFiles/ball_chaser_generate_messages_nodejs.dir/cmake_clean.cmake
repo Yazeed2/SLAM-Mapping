@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/yazeed/Documents/workspace/rosProject/devel/share/gennodejs/ros/ball_chaser/srv/DriveToTarget.js"
+  "/home/yazeed/Documents/workspace/Localization/devel/share/gennodejs/ros/ball_chaser/srv/DriveToTarget.js"
   "CMakeFiles/ball_chaser_generate_messages_nodejs"
 )
 

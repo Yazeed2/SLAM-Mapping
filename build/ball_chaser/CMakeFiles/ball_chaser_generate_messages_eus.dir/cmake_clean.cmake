@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yazeed/Documents/workspace/rosProject/devel/share/roseus/ros/ball_chaser/manifest.l"
-  "/home/yazeed/Documents/workspace/rosProject/devel/share/roseus/ros/ball_chaser/srv/DriveToTarget.l"
+  "/home/yazeed/Documents/workspace/Localization/devel/share/roseus/ros/ball_chaser/manifest.l"
+  "/home/yazeed/Documents/workspace/Localization/devel/share/roseus/ros/ball_chaser/srv/DriveToTarget.l"
   "CMakeFiles/ball_chaser_generate_messages_eus"
 )
 
