@@ -43,6 +43,13 @@
 /home/yazeed/Documents/workspace/Localization/build/my_robot/CMakeFiles/edit_cache.dir
 /home/yazeed/Documents/workspace/Localization/build/my_robot/CMakeFiles/test.dir
 /home/yazeed/Documents/workspace/Localization/build/my_robot/CMakeFiles/_catkin_empty_exported_target.dir
+/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/CMakeFiles/install/strip.dir
+/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/CMakeFiles/install/local.dir
+/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/CMakeFiles/install.dir
+/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/CMakeFiles/list_install_components.dir
+/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/CMakeFiles/rebuild_cache.dir
+/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/CMakeFiles/edit_cache.dir
+/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/CMakeFiles/test.dir
 /home/yazeed/Documents/workspace/Localization/build/ball_chaser/CMakeFiles/install.dir
 /home/yazeed/Documents/workspace/Localization/build/ball_chaser/CMakeFiles/list_install_components.dir
 /home/yazeed/Documents/workspace/Localization/build/ball_chaser/CMakeFiles/edit_cache.dir

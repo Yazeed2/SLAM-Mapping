@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/yazeed/Documents/workspace/Localization/build/gtest/cmake_install.cmake")
   include("/home/yazeed/Documents/workspace/Localization/build/my_robot/cmake_install.cmake")
+  include("/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/cmake_install.cmake")
   include("/home/yazeed/Documents/workspace/Localization/build/ball_chaser/cmake_install.cmake")
   include("/home/yazeed/Documents/workspace/Localization/build/gazebo_ros_2Dmap_plugin/cmake_install.cmake")
 
