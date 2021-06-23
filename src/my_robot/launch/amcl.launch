@@ -11,6 +11,14 @@
         <param name="odom_model_type" value="diff-corrected"/>
         <param name="base_frame_id" value="robot_footprint"/>
         <param name="global_frame_id" value="map"/>
+        <param name="min_particles" value='200' /> 
+        <param name="max_particles" value='6000' /> 
+        <param name="update_min_d" value='0.1' />
+        <param name="laser_min_range" value='0.01' /> 
+        <param name="laser_max_range" value='10' /> 
+        <param name="laser_z_hit" value='1' /> 
+        <param name="laser_z_rand" value='0.1' /> 
+        
         <!-- initial position -->
         <param name="initial_pose_x" value="0"/>
         <param name="initial_pose_y" value="0"/>
