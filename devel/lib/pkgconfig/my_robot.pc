@@ -1,4 +1,4 @@
-prefix=/home/yazeed/Documents/workspace/Localization/devel
+prefix=/home/yazeed/Documents/workspace/SLAM-Mapping/devel
 
 Name: my_robot
 Description: Description of my_robot

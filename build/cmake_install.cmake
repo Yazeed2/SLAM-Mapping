@@ -1,8 +1,8 @@
-# Install script for directory: /home/yazeed/Documents/workspace/Localization/src
+# Install script for directory: /home/yazeed/Documents/workspace/SLAM-Mapping/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yazeed/Documents/workspace/Localization/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yazeed/Documents/workspace/SLAM-Mapping/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,92 +49,92 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yazeed/Documents/workspace/Localization/install/_setup_util.py")
+   "/home/yazeed/Documents/workspace/SLAM-Mapping/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/Localization/install" TYPE PROGRAM FILES "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/SLAM-Mapping/install" TYPE PROGRAM FILES "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yazeed/Documents/workspace/Localization/install/env.sh")
+   "/home/yazeed/Documents/workspace/SLAM-Mapping/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/Localization/install" TYPE PROGRAM FILES "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/SLAM-Mapping/install" TYPE PROGRAM FILES "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yazeed/Documents/workspace/Localization/install/setup.bash;/home/yazeed/Documents/workspace/Localization/install/local_setup.bash")
+   "/home/yazeed/Documents/workspace/SLAM-Mapping/install/setup.bash;/home/yazeed/Documents/workspace/SLAM-Mapping/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/Localization/install" TYPE FILE FILES
-    "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/setup.bash"
-    "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/SLAM-Mapping/install" TYPE FILE FILES
+    "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/setup.bash"
+    "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yazeed/Documents/workspace/Localization/install/setup.sh;/home/yazeed/Documents/workspace/Localization/install/local_setup.sh")
+   "/home/yazeed/Documents/workspace/SLAM-Mapping/install/setup.sh;/home/yazeed/Documents/workspace/SLAM-Mapping/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/Localization/install" TYPE FILE FILES
-    "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/setup.sh"
-    "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/SLAM-Mapping/install" TYPE FILE FILES
+    "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/setup.sh"
+    "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yazeed/Documents/workspace/Localization/install/setup.zsh;/home/yazeed/Documents/workspace/Localization/install/local_setup.zsh")
+   "/home/yazeed/Documents/workspace/SLAM-Mapping/install/setup.zsh;/home/yazeed/Documents/workspace/SLAM-Mapping/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/Localization/install" TYPE FILE FILES
-    "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/setup.zsh"
-    "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/SLAM-Mapping/install" TYPE FILE FILES
+    "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/setup.zsh"
+    "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yazeed/Documents/workspace/Localization/install/.rosinstall")
+   "/home/yazeed/Documents/workspace/SLAM-Mapping/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/Localization/install" TYPE FILE FILES "/home/yazeed/Documents/workspace/Localization/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/yazeed/Documents/workspace/SLAM-Mapping/install" TYPE FILE FILES "/home/yazeed/Documents/workspace/SLAM-Mapping/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yazeed/Documents/workspace/Localization/build/gtest/cmake_install.cmake")
-  include("/home/yazeed/Documents/workspace/Localization/build/my_robot/cmake_install.cmake")
-  include("/home/yazeed/Documents/workspace/Localization/build/teleop_twist_keyboard/cmake_install.cmake")
-  include("/home/yazeed/Documents/workspace/Localization/build/ball_chaser/cmake_install.cmake")
-  include("/home/yazeed/Documents/workspace/Localization/build/gazebo_ros_2Dmap_plugin/cmake_install.cmake")
+  include("/home/yazeed/Documents/workspace/SLAM-Mapping/build/gtest/cmake_install.cmake")
+  include("/home/yazeed/Documents/workspace/SLAM-Mapping/build/my_robot/cmake_install.cmake")
+  include("/home/yazeed/Documents/workspace/SLAM-Mapping/build/teleop_twist_keyboard/cmake_install.cmake")
+  include("/home/yazeed/Documents/workspace/SLAM-Mapping/build/ball_chaser/cmake_install.cmake")
+  include("/home/yazeed/Documents/workspace/SLAM-Mapping/build/rtabmap_ros/cmake_install.cmake")
 
 endif()
 
@@ -146,5 +146,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yazeed/Documents/workspace/Localization/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yazeed/Documents/workspace/SLAM-Mapping/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

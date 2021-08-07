@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/yazeed/Documents/workspace/Localization/devel/share/common-lisp/ros/ball_chaser/srv/DriveToTarget.lisp"
+  "/home/yazeed/Documents/workspace/SLAM-Mapping/devel/share/common-lisp/ros/ball_chaser/srv/DriveToTarget.lisp"
   "CMakeFiles/ball_chaser_generate_messages_lisp"
 )
 

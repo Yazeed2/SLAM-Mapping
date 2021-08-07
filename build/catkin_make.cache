@@ -1,2 +1,2 @@
-ball_chaser:gazebo_ros_2Dmap_plugin:my_robot:teleop_twist_keyboard
--DCATKIN_DEVEL_PREFIX=/home/yazeed/Documents/workspace/Localization/devel -DCMAKE_INSTALL_PREFIX=/home/yazeed/Documents/workspace/Localization/install -G Unix Makefiles
+ball_chaser:my_robot:rtabmap_ros:teleop_twist_keyboard
+-DCATKIN_DEVEL_PREFIX=/home/yazeed/Documents/workspace/SLAM-Mapping/devel -DCMAKE_INSTALL_PREFIX=/home/yazeed/Documents/workspace/SLAM-Mapping/install -G Unix Makefiles

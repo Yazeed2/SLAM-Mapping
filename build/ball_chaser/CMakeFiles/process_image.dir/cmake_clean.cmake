@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yazeed/Documents/workspace/Localization/devel/lib/ball_chaser/process_image"
-  "/home/yazeed/Documents/workspace/Localization/devel/lib/ball_chaser/process_image.pdb"
+  "/home/yazeed/Documents/workspace/SLAM-Mapping/devel/lib/ball_chaser/process_image"
+  "/home/yazeed/Documents/workspace/SLAM-Mapping/devel/lib/ball_chaser/process_image.pdb"
   "CMakeFiles/process_image.dir/src/process_image.cpp.o"
 )
 

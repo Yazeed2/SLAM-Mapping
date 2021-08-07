@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yazeed/Documents/workspace/Localization/src
+CMAKE_SOURCE_DIR = /home/yazeed/Documents/workspace/SLAM-Mapping/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yazeed/Documents/workspace/Localization/build
+CMAKE_BINARY_DIR = /home/yazeed/Documents/workspace/SLAM-Mapping/build
 
 # Utility rule file for bond_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ ball_chaser/CMakeFiles/bond_generate_messages_lisp.dir/build: bond_generate_mess
 .PHONY : ball_chaser/CMakeFiles/bond_generate_messages_lisp.dir/build
 
 ball_chaser/CMakeFiles/bond_generate_messages_lisp.dir/clean:
-	cd /home/yazeed/Documents/workspace/Localization/build/ball_chaser && $(CMAKE_COMMAND) -P CMakeFiles/bond_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/yazeed/Documents/workspace/SLAM-Mapping/build/ball_chaser && $(CMAKE_COMMAND) -P CMakeFiles/bond_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : ball_chaser/CMakeFiles/bond_generate_messages_lisp.dir/clean
 
 ball_chaser/CMakeFiles/bond_generate_messages_lisp.dir/depend:
-	cd /home/yazeed/Documents/workspace/Localization/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yazeed/Documents/workspace/Localization/src /home/yazeed/Documents/workspace/Localization/src/ball_chaser /home/yazeed/Documents/workspace/Localization/build /home/yazeed/Documents/workspace/Localization/build/ball_chaser /home/yazeed/Documents/workspace/Localization/build/ball_chaser/CMakeFiles/bond_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yazeed/Documents/workspace/SLAM-Mapping/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yazeed/Documents/workspace/SLAM-Mapping/src /home/yazeed/Documents/workspace/SLAM-Mapping/src/ball_chaser /home/yazeed/Documents/workspace/SLAM-Mapping/build /home/yazeed/Documents/workspace/SLAM-Mapping/build/ball_chaser /home/yazeed/Documents/workspace/SLAM-Mapping/build/ball_chaser/CMakeFiles/bond_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ball_chaser/CMakeFiles/bond_generate_messages_lisp.dir/depend
 

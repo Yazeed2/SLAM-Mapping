@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/yazeed/Documents/workspace/Localization/devel/lib/ball_chaser/drive_bot"
-  "/home/yazeed/Documents/workspace/Localization/devel/lib/ball_chaser/drive_bot.pdb"
+  "/home/yazeed/Documents/workspace/SLAM-Mapping/devel/lib/ball_chaser/drive_bot"
+  "/home/yazeed/Documents/workspace/SLAM-Mapping/devel/lib/ball_chaser/drive_bot.pdb"
   "CMakeFiles/drive_bot.dir/src/drive_bot.cpp.o"
 )
 
